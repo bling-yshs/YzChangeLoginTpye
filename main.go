@@ -212,7 +212,7 @@ func main() {
     //检测当前文件夹是否存在config文件夹，没有就输出"请将本程序复制到云崽根目录下使用"
     _, err := os.Stat("./config")
     if err != nil {
-        fmt.Println("请将本程序复制到云崽根目录下使用")
+        fmt.Println("错误：请将本程序复制到云崽根目录下使用...")
         fmt.Scanln()
         return
     }

@@ -213,6 +213,7 @@ func main() {
     _, err := os.Stat("./config")
     if err != nil {
         fmt.Println("请将本程序复制到云崽根目录下使用")
+        fmt.Scanln()
         return
     }
 

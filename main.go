@@ -209,6 +209,13 @@ func menu() {
 func main() {
 
     // initialization()
+    //检测当前文件夹是否存在config文件夹，没有就输出"请将本程序复制到云崽根目录下使用"
+    _, err := os.Stat("./config")
+    if err != nil {
+        fmt.Println("请将本程序复制到云崽根目录下使用")
+        return
+    }
+
     menu()
     for {
         //读取用户输入
